@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>William HTML Page</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/folder/css2.css">
+</head>
+<body>
+<%- include('../core/header'); %>
+<h1>Test it works: <%= inputQuery %> </h1>
+<h1>Test it works: <%= inputQuery2 %> </h1>
+<h2>Slug: <%= slug %></h2>
+
+<h3>Data Fetch dari Nodejs di loop oleh ejs</h3>
+<ul>
+    <% for(var i=0; i < 10; i++) { %>
+        <li>Title: <%= externalData[i].title %> | User ID: <%= externalData[i].userId %></li>
+    <% } %>
+</ul>
+<div style="min-height: 100px"></div>
+<h3>Data Fetch Dari Browser</h3>
+<ul id="data-loop"></ul>
+
+<script type="application/javascript">
+    const bootstrap = async ()=> {
+        // Ini ambil data ke api custom
+        const data = await fetch('/api-custom',{method:'post'}).then(e=> e.json())
+        // ini ambil dom id data-loop
+        const dataLoopRef = document.getElementById('data-loop')
+        // looping array
+        data.forEach(item=> {
+            // membuat html li
+            const itemRef = document.createElement('li')
+            // mengeset innerHTML li
+            itemRef.innerHTML = item.name
+            // memasukan li tersebut ke dalam dataLoop html element
+            dataLoopRef.append(itemRef)
+        })
+    }
+    bootstrap()
+
+</script>
+</body>
+</html>
