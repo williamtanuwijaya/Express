@@ -1,0 +1,221 @@
+html,body {
+  background: #9C835F;
+}
+
+.back {
+  position: absolute;
+  width: 55px;
+  height: 87px;
+  left: 37px;
+  top: 12px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #724C21;
+}
+
+header {
+  display: flex;
+  margin: 30px 0 0 30px;
+}
+
+.logo {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  left: 119px;
+  top: 27px;
+  margin-top: 65px;
+  background: url(/assets2/logo.png);
+}
+
+.judul-game{
+  position: absolute;
+  width: 410px;
+  height: 62px;
+  left: 218px;
+  top: 40px;
+  margin-top: 45px;
+
+  font-family: 'Open Sans';
+  font-weight: bold;
+  text-align: center;
+
+  color: #F9B23D;
+}
+
+.user-choice{
+  margin: auto 5% 0 0;
+}
+
+.player-1{
+  position: absolute;
+  width: 299px;
+  height: 94px;
+  left: 296px;
+  top: 162px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.user-tool {
+  width: 70%;
+}
+
+.user-tool {
+  margin: 71px 150px;
+  width: 223px;
+  height: 204px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.user-tool:hover {
+   transform: rotate(20deg);
+   animation-name: buttonAnimate;
+   animation-duration: 1.5s;
+   animation-delay: 0s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes buttonAnimate {
+  0% {
+      transform: rotate(20deg);
+  }
+
+  25% {
+      transform: rotate(10deg);
+  }
+
+  50% {
+      transform: rotate(0deg);
+  }
+
+  65% {
+      transform: rotate(-10deg);
+  }
+
+  85% {
+      transform: rotate(-20deg);
+  }
+
+  100% {
+      transform: rotate(10deg);
+  }
+}
+
+.user-tool{
+  align-self: center;
+  width: 223px;
+  height: 204px;
+}
+
+.user-tool img{
+  width: 50%;
+}
+
+.used{
+  margin-top: -55px;
+  padding-left: 157px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.box {
+  position: absolute;
+  width: 296px;
+  height: 186px;
+  left: 589px;
+  top: 419px;
+  padding-left: 200px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 196px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #BD0000;
+}
+
+.Versus-reset {
+  padding-left: 300px;
+}
+
+.refresh > img{
+  width: 77px;
+  height: 71px;
+  margin-top: 930px;
+  padding-left: 610px;
+  position: absolute;
+}
+
+.used2{
+  padding-left: 1200px;
+  margin-top: 300px;
+}
+
+.Com-choice{
+  margin: auto 0 0 5%;
+}
+
+.user-tool1 {
+  width: 70%;
+}
+
+.user-tool1 {
+  margin: 71px 150px;
+  width: 223px;
+  height: 204px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.user-tool1{
+  align-self: center;
+  width: 223px;
+  height: 204px;
+}
+
+.user-tool1 img{
+  width: 50%;
+}
+
+.playerCom{
+  position: absolute;
+  width: 299px;
+  height: 94px;
+  left: 1485px;
+  top: 162px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
